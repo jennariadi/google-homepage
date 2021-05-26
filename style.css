@@ -1,0 +1,8 @@
+.page {
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #222;
+}

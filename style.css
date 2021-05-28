@@ -112,3 +112,76 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 0 10px 0 gainsboro;
 }
+
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  width: 100vw; /* width is 100% of viewport*/
+  bottom: 0;
+  
+}
+
+#footer-left {
+  display: flex;
+  justify-self: start;
+  padding-left: 20px;
+  align-items: center;
+
+}
+
+#footer-right {
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 20px;
+    align-items: center;
+
+}
+
+/*responsive*/
+
+@media (max-width: 630px) {
+
+  #footer-nav {
+    flex-direction: column;
+  }
+  #footer-left {
+    justify-self: center;
+  }
+
+  #footer-right {
+    justify-self: center;
+  }
+
+  .input-container {
+    width: 95vw;
+  }
+}
+
+@media (max-height: 522px) {
+  body {
+    overflow-x: hidden;
+
+  }
+  section {
+    margin-bottom: 20px;
+
+  }
+  footer {
+    position: relative;
+  }
+}
+
+@media (max-height: 570px, max-width: 630px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    margin-bottom: 13px;
+  }
+
+  footer {
+    position: relative;
+  }
+}

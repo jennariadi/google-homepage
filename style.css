@@ -1,8 +1,42 @@
-.page {
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 0.9em;
+  
+}
+
+/* a styles all links */
+a {
+  margin: 5px;
+  text-decoration: none;
+  color: rgb(22, 21, 21)
+}
+
+a:hover {
+text-decoration-line: underline;
+
+} 
+
+/* flex defines a responsive container */
+/* justify content space between items are evenly distributed in their container */
+nav {
   display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-size: 14px;
-    font-family: Roboto,arial,sans-serif;
-    color: #222;
+  justify-content: space-between;
+}
+
+/* nested flex box using header-nav class */
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+/* > refers to direct child of an element */
+ul > a, ul > img {
+  padding: 0 8px
+}
+
+.header-img:hover {
+  cursor: pointer;
 }

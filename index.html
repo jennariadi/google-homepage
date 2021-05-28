@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-
-<html lang="eng">
-
+<html lang="en">
 <head>
-  <title>Google Homepage</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Homepage</title>
+    <link rel="icon" href="./pics/google_icon.png"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-  
 
 <body>
-    <div class="page">
-
-<!--Left Nav-->
-      <nav class="nav">
-        <ul class="link">
-        <li><a class="nav-link" href="#about">About</a> </li>
-        <li><a class="nav-link" href="#store">Store</a> </li>
-<!--Right Nav-->
-        <li><a class="nav-link" href="#gmail">Gmail</a> </li>
-        <li><a class="nav-link" href="#images">Images</a> </li>
+  
+  <header>
+    <nav>
+      <!--Left Nav, class will be the same for both Nav's-->
+      <ul class="header-nav">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+        <!--the pound sign makes it so that the link doesn't go anywhere -->
       </ul>
 
-      </nav>
-    </div>
+      <!--Right Nav-->
+      <ul class="header-nav"> 
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img class="header-img" src="./pics/apps.png" alt="Google Applications" width="30px" height="30px">
+        <img href="#" class="header-img" src="./pics/avatar.png" alt="Google Avatar" width="30px" height="30px">
+        <!--#header-img class is used to style in css-->
 
-<!--Google logo-->
-    <div id="logo">
-      <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" 
-      alt="Google Homepage" height="92" width="272">
-    </div>
+      </ul>
+    </nav>
 
-<!--Search bar-->
-
-    <div id="search-bar">
-
-      <input
-      placeholder="Search Google or type a URL">
-    </div>
-
+    <section>
+      <h1>Google</h1>
+      <div class="input-container">
         
+      </div>
+      
+
+
+
+
+
+    </section>
+
+  </header>
 </body>
-       
+
 
 </html>

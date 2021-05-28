@@ -34,9 +34,81 @@ nav {
 
 /* > refers to direct child of an element */
 ul > a, ul > img {
-  padding: 0 8px
+  padding: 0 8px;
+  margin: 20px;
 }
 
 .header-img:hover {
   cursor: pointer;
+
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh; /* 5% of the viewport (browser window) */
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: 38px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+
+}
+
+.google-logo {
+display: flex;
+padding: 40px;
+
+}
+
+.input-container > input { /*input element within this container needs to be invisible basically */
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+
+.input-container:hover {
+  box-shadow: 0 0 10px 0 gainsboro;
+/* zero pixels horizontal and vertical, 10px blur*/
+}
+
+.search-bar {
+  display: flex;
+  padding: 20px;
+
+}
+
+.search-bar:hover {
+  cursor: pointer;
+}
+
+.button-container {
+  padding-top: 60px;
+
+}
+
+button {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  padding: 0 16px;
+  margin: 11px 4px;
+
+
+}
+
+button:hover {
+
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 gainsboro;
 }
